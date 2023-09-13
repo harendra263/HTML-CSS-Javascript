@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: rgb(66, 164, 164);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border: 2px solid white;
+    animation: orbit 4s linear infinite;
+    border-radius: 50%;
+}
+
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    animation: up-down 2s ease infinite alternate;
+}
+
+.dot:nth-child(2n+2) {
+    animation-delay: 0.1s;
+    background-color: red;
+}
+
+.dot:nth-child(2n+1) {
+    animation-delay: 0.3s;
+    background-color: green;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-10px);
+    }
+
+    to {
+        transform: translateY(10px);
+    }
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* transition: 1s ease; */
+    animation-name: orbit;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    border-radius: 50%;
+    
+
+    
+}
+
+/* .box:hover {
+    transform: translate(200px);
+} */
+
+
+@keyframes orbit {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translate(-400px, 0);
+        background-color: beige;
+    }
+
+    100% {
+        transform: translate(200px, 0);
+        background-color: blanchedalmond;
+    }
+}
+
+
+
+@keyframes circles {
+    0% {
+        transform: translate(0, 0);
+        background-color: beige;
+    }
+
+    25% {
+        transform: translate(200px, 0);
+        background-color: blanchedalmond;
+    }
+
+    50% {
+        transform: translate(200px, 200px);
+        background-color: darkolivegreen;
+    }
+
+    75% {
+        transform: translate(0, 200px);
+        background-color: rgb(29, 32, 32);
+    }
+}

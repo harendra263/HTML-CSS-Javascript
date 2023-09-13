@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    text-align: end;
+    padding: 20px;
+    background-color: #48bf91;
+}
+
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+li a:hover {
+    color: darkblue;
+    cursor: pointer;
+}
+
+ul a {
+    text-decoration: none;
+    color: white;
+}
+
+

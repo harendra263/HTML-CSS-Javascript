@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,900&family=Lato:wght@700&family=Poppins&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+    --body-color: #1a313a;
+    --padding-inline-section: 5px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--body-color);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    height: 100%;
+    display: block;
+    color: var(--primary-text-color);
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+/* ============SIDEBAR========== */
+
+.sidebar header {
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.sidebar {
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    padding: 10px 14px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    transition: 0.5s;
+    overflow: hidden;
+
+}
+
+.sidebar:hover {
+    width: 300px;
+}
+
+.sidebar .image-text {
+    display: flex;
+}
+
+.sidebar .header-text {
+    padding-top: 10px;
+}
+
+.sidebar .image-text {
+    padding-inline: var(--padding-inline-section);
+}
+
+.sidebar .image-text img {
+    width: 70px;
+    height: 40px;
+    padding-top: 5px;
+    padding-right: 20px;
+    border-radius: 6px;
+}
+
+
+
+
+/* Menu Bar */
+
+
+.sidebar ul {
+    position: relative;
+    height: 100vh;
+    margin-top: 40px;
+    /* padding-left: 15px; */
+}
+
+.sidebar li {
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background-color: #fafafa;
+}
+
+
+.sidebar ul li a {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    min-width: 68px;
+}
+
+.sidebar ul li a .text {
+    position: relative;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.sidebar ul li:nth-child(1){
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px 0 30px 0;
+}
+
+.sidebar ul li .search {
+    height: 35px;
+    border-color: var(--body-color);
+    font-size: 1.1rem;
+    padding-left: 5px;
+    border-radius: 10px;
+}

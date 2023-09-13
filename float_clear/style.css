@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 400px;
+    height: 400px; */
+    border: 1px solid blue;
+    overflow: auto;
+}
+
+.block1 {
+    overflow: auto;
+}
+
+
+.p1 {
+    border: 1px solid green;
+}
+
+.img1 {
+    float: right;
+    margin-left: 100px;
+}
+
+.img2 {
+    float: left;
+}
+
+.bigbox {
+    width: 400px;
+    height: 400px;
+    background-color: gainsboro;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 2px solid red;
+    overflow: auto;
+}
+
+.b1 {
+    background-color: red;
+    float: left;
+}
+
+.b2 {
+    background-color: blue;
+    float: left;
+}
+
+.b3 {
+    background-color: violet;
+    float: left;
+}
+
+.b4 {
+    background-color: blueviolet;
+    float: left;
+}

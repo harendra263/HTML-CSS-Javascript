@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cards {
+    background: white;
+    width: 150px;
+    height: 120px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.cards .number-icon {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+    gap: 5px;
+}
+
+.cards p {
+    text-align: center;
+    font-size: 1.1rem;
+    padding-top: 20px;
+}

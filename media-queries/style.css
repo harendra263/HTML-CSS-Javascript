@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border: 1px solid blueviolet;
+    background-color: blueviolet;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* CSS MEDIA QUERIES */
+
+@media screen and (max-width: 500px) {
+    .container{
+        width: 30vh;
+        height: 30vh;
+        margin: auto;
+        background-color: beige;
+        border: beige;
+        color: black;
+    }
+}
+

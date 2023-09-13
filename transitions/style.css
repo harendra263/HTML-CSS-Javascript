@@ -1,0 +1,16 @@
+.box {
+    background-color: teal;
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    transition-duration: 1s;
+    /* transition-property: all; */
+    transition-delay: 1s;
+}
+
+
+.box:hover {
+    background-color: rgb(84, 84, 143);
+    border-radius: 50%;
+    transform: rotate(180deg);
+}

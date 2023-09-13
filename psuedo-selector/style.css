@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+p {
+    margin: 0 0 30px 0;
+}
+
+.secondary-btn {
+    padding: 15px 20px;
+    background-color: rgb(144, 119, 90);
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.secondary-btn:link {
+    color: green;
+}
+
+.secondary-btn:visited {
+    color: blueviolet;
+}
+
+.secondary-btn:hover {
+    color: red;
+}
+
+.secondary-btn:active {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}
+
+ul {
+    margin-top: 50px;
+}
+
+/* ul li:first-child {
+    background-color: black;
+    color: white;
+} */
+
+/* ul li:nth-child(5) {
+    background-color: darkblue;
+    color: white;
+} */
+
+ul li:nth-child(2n + 3){
+    background-color: darkblue;
+    color: white;
+}
+
+h2::first-letter {
+    font-size: larger;
+}
+
+::selection {
+    color: greenyellow;
+    background-color: black;
+}
+
+p::first-line {
+    background-color: beige;
+}
+
+/* before and after  */
+
+h3::before {
+    content: 'Independent';
+}
+
+h3::after {
+    content: "*";
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+.important::after {
+    content: 'important';
+    background-color: red;
+    color: white;
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
